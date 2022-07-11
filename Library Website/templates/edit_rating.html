@@ -1,0 +1,26 @@
+{% extends "bootstrap/base.html"%}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title%} Title {% endblock%}
+
+{% block styles %}
+  {{super()}}
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link href=" {{ url_for('static', filename='css/styles.css') }} " rel="stylesheet"/>
+{% endblock %}
+
+{% block content%}
+<div class="container rating">
+  <p><span>Title:</span>  {{ book.title }}</p>
+  <p><span>Author:</span>  {{ book.author }}</p>
+  <p><span>Current rating:</span> {{ book.rating }}</p>
+  <br>
+  {{ wtf.quick_form(form) }}
+</div>
+
+
+{% endblock%}

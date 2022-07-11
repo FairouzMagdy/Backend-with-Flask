@@ -1,0 +1,37 @@
+body {
+
+  font-family: "Montserrat";
+  font-size: 1.8rem;
+  background-color: #DDA0DD;
+}
+h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 4.5rem;
+  line-height: 1.5;
+  margin-top: 7%;
+
+}
+p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.container {
+  margin: 3% 15%;
+}
+
+.btn-lg {
+  position: absolute;
+  left: 45%;
+}
+
+span {
+  font-weight: 500;
+  text-align: left;
+}
+
+.rating {
+  padding-top: 40px;
+
+}
